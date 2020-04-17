@@ -1,0 +1,19 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop"
+  },
+  "keywords": [],
+  "author": "Aravind Balla <bsaaravind@gmail.com> (https://aravindballa.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@aengusm/gatsby-theme-brain": "^1.0.3",
+    "gatsby": "^2.20.23",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

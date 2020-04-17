@@ -1,0 +1,8 @@
+{
+  "name": "@aravindballa/notes",
+  "version": "0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
