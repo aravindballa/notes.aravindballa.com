@@ -1,0 +1,39 @@
+/* purgecss start ignore */
+@tailwind base;
+
+h1 {
+  @apply text-3xl font-bold;
+}
+h2 {
+  @apply text-xl font-bold;
+}
+h3 {
+  @apply font-bold;
+}
+a {
+  @apply text-blue-600 underline;
+}
+a:hover {
+  @apply text-blue-700 no-underline;
+}
+p {
+  @apply mb-4;
+}
+
+ul {
+  @apply list-disc pl-6;
+}
+
+hr {
+  @apply my-4;
+}
+.highlight {
+  @apply bg-yellow-200 px-1 -mx-1 rounded;
+}
+.refs-box a {
+  @apply text-gray-600;
+}
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
