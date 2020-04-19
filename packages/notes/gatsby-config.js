@@ -1,3 +1,8 @@
 module.exports = {
-  plugins: ['@aengusm/gatsby-theme-brain'],
+  plugins: [
+    {
+      resolve: '@aengusm/gatsby-theme-brain',
+      options: { notesDirectory: 'content/', rootPath: '/', rootNote: 'about' },
+    },
+  ],
 };
