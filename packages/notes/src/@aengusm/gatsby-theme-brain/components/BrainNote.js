@@ -1,29 +1,49 @@
 import React from 'react';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
+import { Helmet } from 'react-helmet';
+import Portal from '@reach/portal';
+import { MDXProvider } from '@mdx-js/react';
 
 import '../../../style.css';
 
-const BrainNote = ({ note }) => {
+import components from '../../../components';
+
+const BrainNote = ({ note, linkedNotes }) => {
   let references = [];
   let referenceBlock;
   if (note.inboundReferences != null) {
-    references = note.inboundReferences.map((ref) => (
-      <li>
-        <a href={ref}>{ref}</a>
-      </li>
-    ));
+    references = note.inboundReferences.map((ref, i) => {
+      const reference = linkedNotes.find((note) => note.slug === ref);
+      return (
+        <a
+          className="no-underline hover:text-gray-700"
+          href={`/${reference.slug}`}
+          key={`${ref}-${reference.slug}`}
+        >
+          <div className="py-2">
+            <h5 className="">{reference.title}</h5>
+            <p className="text-sm m-0">{reference.childMdx.excerpt}</p>
+          </div>
+        </a>
+      );
+    });
 
     if (references.length > 0) {
       referenceBlock = (
         <>
           <h3>Linked References</h3>
-          <ul className="mb-4">{references}</ul>
+          <div className="mb-4">{references}</div>
+          <hr className="mx-auto w-32" />
         </>
       );
     }
   }
   return (
-    <>
+    <MDXProvider components={components}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{note.title} - aravindballa's notes</title>
+      </Helmet>
       <div
         id="brainNote"
         className="container max-w-2xl px-4 mx-auto text-gray-900 flex flex-col min-h-screen"
@@ -42,7 +62,25 @@ const BrainNote = ({ note }) => {
           </p>
         </div>
       </div>
-    </>
+      {linkedNotes &&
+        linkedNotes
+          .filter(
+            (ln) => !(note.inboundReferences || []).includes(ln.slug) && !!ln.childMdx.excerpt
+          )
+          .map((ln) => (
+            <Portal>
+              <div
+                id={ln.slug}
+                className="fixed w-64 p-4 bg-gray-100 rounded-lg shadow-lg border border-blue-200"
+              >
+                <div className="">
+                  <h5 className="mb-2">{ln.title}</h5>
+                  <p className="text-sm m-0">{ln.childMdx.excerpt}</p>
+                </div>
+              </div>
+            </Portal>
+          ))}
+    </MDXProvider>
   );
 };
 
