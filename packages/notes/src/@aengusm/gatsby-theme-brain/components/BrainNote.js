@@ -6,7 +6,7 @@ import { MDXProvider } from '@mdx-js/react';
 
 import '../../../style.css';
 
-import components from '../../../components';
+import components from '../../../components/MdxComponents';
 
 const BrainNote = ({ note, linkedNotes }) => {
   let references = [];

@@ -5,7 +5,6 @@ const AnchorTag = (props) => {
 
   const onMouseEnter = (e) => {
     tooltipRef.current = document.getElementById(props.href.replace(/^\//, ''));
-    console.log(tooltipRef);
     if (tooltipRef.current) {
       const { right, top, height } = e.target.getBoundingClientRect();
       const tooltipHeight = 150;
