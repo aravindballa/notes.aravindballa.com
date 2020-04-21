@@ -1,9 +1,9 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import BrainNote from '../components/BrainNote';
+import React from "react";
+import { graphql } from "gatsby";
+import BrainNote from "../components/BrainNote";
 
 export default (props) => {
-  return <BrainNote note={props.data.brainNote} linkedNotes={props.data.allBrainNote.nodes} />;
+  return <BrainNote note={props.data.brainNote} linkedNotes={props.data.allBrainNote.nodes}/>;
 };
 
 export const query = graphql`
@@ -16,7 +16,7 @@ export const query = graphql`
         body
       }
     }
-    allBrainNote(filter: { slug: { in: $references } }) {
+    allBrainNote(filter: {slug: {in: $references}}) {
       nodes {
         slug
         title

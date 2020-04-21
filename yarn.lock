@@ -2,16 +2,6 @@
 # yarn lockfile v1
 
 
-"@aengusm/gatsby-theme-brain@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@aengusm/gatsby-theme-brain/-/gatsby-theme-brain-1.0.3.tgz#a3b2222f217f2cc2b6f42c52df94f01052012a6f"
-  integrity sha512-KHqGdtzq2gUOUAMMTu9gvPoTR9wVKZIo9om7GBI3OOje6TtdjRjzd1xdBbtCJk6vRla3gedrBPY99GOpzAstaQ==
-  dependencies:
-    "@mdx-js/mdx" "^1.5.8"
-    "@mdx-js/react" "^1.5.8"
-    gatsby-plugin-mdx "^1.1.8"
-    gatsby-transformer-remark "^2.7.2"
-
 "@babel/code-frame@7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
