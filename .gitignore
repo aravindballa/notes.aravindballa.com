@@ -114,4 +114,4 @@ public
 .yarn/build-state.yml
 .pnp.*
 
-.DS_Store
+*.DS_Store
