@@ -16,4 +16,4 @@ Present areas of focus are
 
 ---
 
-This is actually inspired from [[Max Stoiber]] who has a [version](https://notes.mxstbr.com/) of this.
+This idea is inspired from [Max Stoiber](https://notes.mxstbr.com/) and [Andy Matuschak](https://notes.andymatuschak.org/About_these_notes).
