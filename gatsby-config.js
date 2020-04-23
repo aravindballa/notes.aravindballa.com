@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   plugins: [
     {
@@ -6,7 +8,7 @@ module.exports = {
         notesDirectory: 'content/',
         rootPath: '/',
         rootNote: 'about',
-        // noteTemplate: './src/templates/brain.js',
+        noteTemplate: path.join(__dirname, 'src/templates/note.js'),
       },
     },
     `gatsby-plugin-postcss`,

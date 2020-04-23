@@ -1,8 +1,29 @@
 {
   "name": "@aravindballa/notes",
-  "version": "0.1",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ]
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop"
+  },
+  "keywords": [],
+  "author": "Aravind Balla <bsaaravind@gmail.com> (https://aravindballa.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@aengusm/gatsby-theme-brain": "^1.0.5",
+    "@popperjs/core": "^2.3.3",
+    "@reach/portal": "^0.10.0",
+    "gatsby": "^2.20.23",
+    "gatsby-plugin-postcss": "^2.2.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-popper": "^2.2.2"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
+    "tailwindcss": "^1.2.0"
+  }
 }

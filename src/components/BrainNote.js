@@ -3,30 +3,28 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Helmet } from 'react-helmet';
 import Portal from '@reach/portal';
 import { MDXProvider } from '@mdx-js/react';
+// import { usePopper } from 'react-popper';
 
-import '../../../style.css';
+import '../style.css';
 
-import components from '../../../components/MdxComponents';
+import components from './MdxComponents';
 
-const BrainNote = ({ note, linkedNotes }) => {
+const BrainNote = ({ note }) => {
   let references = [];
   let referenceBlock;
-  if (note.inboundReferences != null) {
-    references = note.inboundReferences.map((ref, i) => {
-      const reference = linkedNotes.find((note) => note.slug === ref);
-      return (
-        <a
-          className="no-underline hover:text-gray-700"
-          href={`/${reference.slug}`}
-          key={`${ref}-${reference.slug}`}
-        >
-          <div className="py-2">
-            <h5 className="">{reference.title}</h5>
-            <p className="text-sm m-0">{reference.childMdx.excerpt}</p>
-          </div>
-        </a>
-      );
-    });
+  if (note.inboundReferenceNotes != null) {
+    references = note.inboundReferenceNotes.map((reference) => (
+      <a
+        className="no-underline hover:text-gray-700"
+        href={`/${reference.slug}`}
+        key={reference.slug}
+      >
+        <div className="py-2">
+          <h5 className="">{reference.title}</h5>
+          <p className="text-sm m-0">{reference.childMdx.excerpt}</p>
+        </div>
+      </a>
+    ));
 
     if (references.length > 0) {
       referenceBlock = (
@@ -62,13 +60,11 @@ const BrainNote = ({ note, linkedNotes }) => {
           </p>
         </div>
       </div>
-      {linkedNotes &&
-        linkedNotes
-          .filter(
-            (ln) => !(note.inboundReferences || []).includes(ln.slug) && !!ln.childMdx.excerpt
-          )
-          .map((ln) => (
-            <Portal>
+      {note.outboundReferenceNotes &&
+        note.outboundReferenceNotes
+          .filter((reference) => !!reference.childMdx.excerpt)
+          .map((ln, i) => (
+            <Portal key={i}>
               <div
                 id={ln.slug}
                 className="fixed w-64 p-4 bg-gray-100 rounded-lg shadow-lg border border-blue-200"
