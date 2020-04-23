@@ -29,7 +29,7 @@ const BrainNote = ({ note }) => {
     if (references.length > 0) {
       referenceBlock = (
         <>
-          <h3>Linked References</h3>
+          <h3>Refered in</h3>
           <div className="mb-4">{references}</div>
           <hr className="mx-auto w-32" />
         </>
