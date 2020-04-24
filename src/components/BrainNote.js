@@ -3,7 +3,6 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { Helmet } from 'react-helmet';
 import Portal from '@reach/portal';
 import { MDXProvider } from '@mdx-js/react';
-// import { usePopper } from 'react-popper';
 
 import '../style.css';
 
@@ -29,7 +28,7 @@ const BrainNote = ({ note }) => {
     if (references.length > 0) {
       referenceBlock = (
         <>
-          <h3>Refered in</h3>
+          <h3>Referred in</h3>
           <div className="mb-4">{references}</div>
           <hr className="mx-auto w-32" />
         </>
@@ -56,7 +55,7 @@ const BrainNote = ({ note }) => {
           <p className="text-sm m-0">
             If you think this note resonated, be it positive or negative, send me a{' '}
             <a href="https://twitter.com/messages/compose?recipient_id=532906019">direct message</a>{' '}
-            on Twitter or an <a href="mailto:bsaaravind@gmail.com">email</a> and we can talk.
+            on Twitter or an <a href="mailto:bsaaravind+notes@gmail.com">email</a> and we can talk.
           </p>
         </div>
       </div>
@@ -69,10 +68,8 @@ const BrainNote = ({ note }) => {
                 id={ln.slug}
                 className="fixed w-64 p-4 bg-gray-100 rounded-lg shadow-lg border border-blue-200"
               >
-                <div className="">
-                  <h5 className="mb-2">{ln.title}</h5>
-                  <p className="text-sm m-0">{ln.childMdx.excerpt}</p>
-                </div>
+                <h5 className="mb-2">{ln.title}</h5>
+                <p className="text-sm m-0">{ln.childMdx.excerpt}</p>
               </div>
             </Portal>
           ))}
