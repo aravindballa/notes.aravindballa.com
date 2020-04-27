@@ -27,13 +27,21 @@ ul {
 hr {
   @apply my-4;
 }
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
 .highlight {
   @apply bg-yellow-200 px-1 -mx-1 rounded;
 }
 .refs-box a {
   @apply text-gray-600;
 }
-@tailwind components;
-/* purgecss end ignore */
 
-@tailwind utilities;
+blockquote {
+  @apply py-1 px-4 mb-4 border-l-2 border-blue-500;
+}
+blockquote p {
+  @apply m-0 font-serif text-xl;
+}
