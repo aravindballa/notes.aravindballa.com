@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 import Portal from '@reach/portal';
 import { MDXProvider } from '@mdx-js/react';
 
-import '../style.css';
+import '../../style.css';
 
-import components from './MdxComponents';
+import components from 'gatsby-theme-andy/src/components/MdxComponents';
 
 const BrainNote = ({ note }) => {
   let references = [];
