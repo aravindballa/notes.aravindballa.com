@@ -27,14 +27,7 @@ ul {
 hr {
   @apply my-4;
 }
-@tailwind components;
-/* purgecss end ignore */
 
-@tailwind utilities;
-
-.highlight {
-  @apply bg-yellow-200 px-1 -mx-1 rounded;
-}
 .refs-box a {
   @apply text-gray-600;
 }
@@ -56,4 +49,13 @@ pre {
 
 pre > code {
   @apply p-0 m-0 mb-2 bg-transparent;
+}
+
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+.highlight {
+  @apply bg-yellow-200 px-1 -mx-1 rounded;
 }
