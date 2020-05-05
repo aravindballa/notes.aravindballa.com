@@ -45,3 +45,15 @@ blockquote {
 blockquote p {
   @apply m-0 font-serif text-xl;
 }
+
+code {
+  @apply text-sm text-orange-800 bg-orange-100 px-1 -mx-1 rounded;
+}
+
+pre {
+  @apply mb-4;
+}
+
+pre > code {
+  @apply p-0 m-0 mb-2 bg-transparent;
+}
