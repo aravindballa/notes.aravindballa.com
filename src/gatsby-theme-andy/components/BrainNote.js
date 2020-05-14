@@ -35,8 +35,28 @@ const BrainNote = ({ note }) => {
       );
     }
   }
+
+  const popups = {};
+  if (note.outboundReferenceNotes) {
+    note.outboundReferenceNotes
+      .filter((reference) => !!reference.childMdx.excerpt)
+      .forEach((ln, i) => {
+        popups[ln.slug] = (
+          <div
+            id={ln.slug}
+            className="w-64 p-4 bg-gray-100 rounded-lg shadow-lg border border-blue-200"
+          >
+            <h5 className="mb-2">{ln.title}</h5>
+            <p className="text-sm">{ln.childMdx.excerpt}</p>
+          </div>
+        );
+      });
+  }
+
+  const AnchorTag = (props) => <components.a {...props} popups={popups} />;
+
   return (
-    <MDXProvider components={components}>
+    <MDXProvider components={{ a: AnchorTag }}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>{note.title} - aravindballa's notes</title>

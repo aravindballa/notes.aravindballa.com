@@ -20,6 +20,6 @@ Still not a pro at this, but I stammer a lot less. One thing that helped me in t
 
 ## We recently added transcripts to the episodes.
 
-There is an AI app called [otter.ai](otter.ai) which helps you transcribe audio. It even recognises different speakers. Although, it's not correct and accurate every time. We have spend some time correcting it and adjusting the speakers.
+There is an AI app called [otter.ai](https://otter.ai) which helps you transcribe audio. It even recognises different speakers. Although, it's not correct and accurate every time. We have spend some time correcting it and adjusting the speakers.
 
 One cool thing I do here is - I put the good points in `blockquotes`. These blockquotes will be fetched randomly from a random episode and will be tweeted by our bot - [[Tweet LCP Quotes]].

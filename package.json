@@ -11,6 +11,7 @@
   "author": "Aravind Balla <bsaaravind@gmail.com> (https://aravindballa.com)",
   "license": "MIT",
   "dependencies": {
+    "@tippyjs/react": "^4.0.2",
     "gatsby": "^2.20.36",
     "gatsby-plugin-postcss": "^2.2.4",
     "gatsby-theme-andy": "^0.0.5",
