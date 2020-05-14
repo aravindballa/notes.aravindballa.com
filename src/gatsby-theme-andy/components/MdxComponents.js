@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Tippy from '@tippyjs/react';
-import 'tippy.js/animations/shift-away.css';
+
+// Animation styles are imported in `src/styles.css`
 
 const AnchorTag = ({ href, popups = {}, ...restProps }) => {
   if (!href.match(/^http/))
