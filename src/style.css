@@ -1,6 +1,10 @@
 /* purgecss start ignore */
 @tailwind base;
 
+body {
+  height: 100vh;
+}
+
 h1 {
   @apply text-3xl font-bold;
 }
@@ -100,8 +104,8 @@ pre > code {
   position: absolute;
   z-index: 2;
   display: block;
-  top: 430px;
-  left: calc(50% - 28px);
+  top: 310px;
+  left: calc(50% - 63px);
 }
 
 /* purgecss end ignore */

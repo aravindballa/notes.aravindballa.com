@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@aengusm/gatsby-theme-brain@^1.0.5":
+"@aengusm/gatsby-theme-brain@1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@aengusm/gatsby-theme-brain/-/gatsby-theme-brain-1.0.5.tgz#8c46bd467845c1a7aae61e137fff92c2742862b5"
   integrity sha512-lXPJMP11Utetq4mwseJVxuyJIZkwYT5gm3RWpq0aQG3PHLVL9C9ebIQ40LwIGXvsyk2/CXA56/mTdmUhQOcUaw==
@@ -1048,14 +1048,6 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.0.tgz#0e1bdf8d021e7ea58affade33d9d607e11365915"
   integrity sha512-NMrDy6EWh9TPdSRiHmHH2ye1v5U0gBD7pRYwSwJvomx7Bm4GG04vu63dYiVzebLOx2obPpJugew06xVP0Nk7hA==
 
-"@reach/portal@^0.10.0":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.10.1.tgz#07329846ef45bb1af362d4470dd137087b39da68"
-  integrity sha512-axap4IxA0xgsxluqyeyVuGZrStqaZ81iyiHmXFn+D+bjDNdd29colHm5GEB5mjGnkqktcXWyx5DQ+aRHIyGEkQ==
-  dependencies:
-    "@reach/utils" "^0.10.1"
-    tslib "^1.11.1"
-
 "@reach/router@^1.3.3":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.3.tgz#58162860dce6c9449d49be86b0561b5ef46d80db"
@@ -1065,15 +1057,6 @@
     invariant "^2.2.3"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
-
-"@reach/utils@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.10.1.tgz#ee0283f81e161db4126a943b5c908a69f6a66d7e"
-  integrity sha512-YzwZWVK+rSiUATNVtK7H2/ZkT/GhNKmkRjnj3hnVhSYLGxY9uQdfc+npetOqkh4hTAOXiErDa64ybVClR3h0TA==
-  dependencies:
-    "@types/warning" "^3.0.0"
-    tslib "^1.11.1"
-    warning "^4.0.3"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -1276,11 +1259,6 @@
     "@types/node" "*"
     "@types/unist" "*"
     "@types/vfile-message" "*"
-
-"@types/warning@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
-  integrity sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=
 
 "@types/yargs-parser@*":
   version "15.0.0"
@@ -5164,13 +5142,13 @@ gatsby-telemetry@^1.2.6:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-theme-andy@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-andy/-/gatsby-theme-andy-0.0.5.tgz#2aa81a0a5df67909687aab6c574802e1eaeb0808"
-  integrity sha512-vAJkqp5RUaGZJyDZETyNBumgY7iq6PIpXX5Vw1tBTVvpzO8s2Fjs1MgHoYTUBUQnrnCpS5pAlBQvSGd4mNLuVA==
+gatsby-theme-andy@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-andy/-/gatsby-theme-andy-0.1.0.tgz#5ed4afb914670cb3d9cae836ea1bf33d7eeafa8a"
+  integrity sha512-4VZ/iW23l/PLp7h9iDi3vZgnyj9r2erUUoFGGYeQQAoRz+/UMA/AAtzHVABVl++0vcqPQ8TXlkDQ0/ntr46CHQ==
   dependencies:
-    "@aengusm/gatsby-theme-brain" "^1.0.5"
-    "@reach/portal" "^0.10.0"
+    "@aengusm/gatsby-theme-brain" "1.0.5"
+    "@tippyjs/react" "^4.0.2"
 
 gatsby-transformer-remark@^2.7.2:
   version "2.7.5"
@@ -11560,7 +11538,7 @@ ts-pnp@^1.1.6:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
 
-tslib@^1.10.0, tslib@^1.11.1, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
