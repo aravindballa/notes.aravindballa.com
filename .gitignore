@@ -115,3 +115,5 @@ public
 .pnp.*
 
 *.DS_Store
+
+.obsidian

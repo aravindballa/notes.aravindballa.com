@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "gatsby build",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "clean": "gatsby clean"
   },
   "keywords": [],
   "author": "Aravind Balla <bsaaravind@gmail.com> (https://aravindballa.com)",
@@ -14,8 +15,7 @@
     "@tippyjs/react": "^4.0.2",
     "gatsby": "^2.20.36",
     "gatsby-plugin-postcss": "^2.2.4",
-    "gatsby-theme-andy": "^0.1.0",
-    "querystring": "^0.2.0",
+    "gatsby-theme-andy": "^0.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0"

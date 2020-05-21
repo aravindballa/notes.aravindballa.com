@@ -1,33 +1,16 @@
 import React from 'react';
-import { Link, navigate, withPrefix } from 'gatsby';
 import Tippy from '@tippyjs/react';
-import qs from 'querystring';
+import { LinkToStacked } from 'react-stacked-pages-hook';
 
 // Animation styles are imported in `src/styles.css`
+
+// TODO cmd+click open page in new tab
 
 const AnchorTag = ({ href, popups = {}, index, ...restProps }) => {
   if (!href.match(/^http/))
     return (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away">
-        <Link
-          {...restProps}
-          to={href}
-          onClick={(ev) => {
-            ev.preventDefault();
-            const search = qs.parse(window.location.search.replace(/^\?/, ''));
-            let stackedNotes = search.stackedNotes || [];
-            if (typeof stackedNotes === 'string') {
-              stackedNotes = [stackedNotes];
-            }
-            stackedNotes.splice(index, stackedNotes.length - index, href);
-            search.stackedNotes = stackedNotes;
-            navigate(
-              `${window.location.pathname.replace(withPrefix(''), '')}?${qs.stringify(search)}`
-            );
-
-            // TODO: if note is already open - scrollback to it
-          }}
-        />
+        <LinkToStacked {...restProps} to={href} />
       </Tippy>
     );
   return (

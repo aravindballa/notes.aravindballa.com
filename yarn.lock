@@ -5142,13 +5142,15 @@ gatsby-telemetry@^1.2.6:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-theme-andy@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-andy/-/gatsby-theme-andy-0.1.0.tgz#5ed4afb914670cb3d9cae836ea1bf33d7eeafa8a"
-  integrity sha512-4VZ/iW23l/PLp7h9iDi3vZgnyj9r2erUUoFGGYeQQAoRz+/UMA/AAtzHVABVl++0vcqPQ8TXlkDQ0/ntr46CHQ==
+gatsby-theme-andy@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-andy/-/gatsby-theme-andy-0.1.1.tgz#d3e6c2827d2f8ade59cbda5257b29a343e9f6877"
+  integrity sha512-SaJsETLKs7+HtnuoYCsCBskDAP1hMsCo2loJmrScJlLeKCtfbuUTuNqG7yGw0P1wZrmDFkspe3puOy0h8PJ3Sw==
   dependencies:
     "@aengusm/gatsby-theme-brain" "1.0.5"
     "@tippyjs/react" "^4.0.2"
+    querystring "^0.2.0"
+    react-stacked-pages-hook "^0.2.0"
 
 gatsby-transformer-remark@^2.7.2:
   version "2.7.5"
@@ -9725,6 +9727,13 @@ react-side-effect@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.0.tgz#1ce4a8b4445168c487ed24dab886421f74d380d3"
   integrity sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
+
+react-stacked-pages-hook@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-stacked-pages-hook/-/react-stacked-pages-hook-0.2.0.tgz#5a929137839262f7b68eb062a7e9162fed975976"
+  integrity sha512-yLWa2hjmo4hYny8VVAuktDOm4ErNO07InAF90reNgHK1jNsE21t1eFMpydptKe4aBzDGt1xVY4lhlld88jjJuw==
+  dependencies:
+    lodash.throttle "^4.1.1"
 
 react@^16.13.1, react@^16.8.0:
   version "16.13.1"
