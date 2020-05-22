@@ -108,4 +108,18 @@ pre > code {
   left: calc(50% - 63px);
 }
 
+.note-container {
+  max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .note-columns-container {
+    width: unset !important;
+  }
+
+  .note-container {
+    width: 100% !important;
+  }
+}
+
 /* purgecss end ignore */

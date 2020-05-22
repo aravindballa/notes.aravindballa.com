@@ -21,13 +21,15 @@ const StackedPageWrapper = ({
 }) => (
   <PageIndexProvider value={i}>
     <div
-      className={`note-container container max-w-xl px-4 overflow-y-auto bg-white sticky ${
+      className={`note-container md:max-w-xl px-4 overflow-y-auto bg-white md:sticky flex flex-col flex-shrink-0 ${
         overlay ? 'shadow-lg' : ''
       }`}
       style={{ left: 40 * i, right: -585, width: NOTE_WIDTH }}
     >
       <div
-        className={`transition-opacity duration-100 ${obstructed ? `opacity-100` : `opacity-0`}`}
+        className={`md:block hidden transition-opacity duration-100 ${
+          obstructed ? `opacity-100` : `opacity-0`
+        }`}
       >
         <div className={`transform rotate-90 origin-left pb-4 absolute z-10`}>
           <LinkToStacked to={slug} className="no-underline text-gray-900">
@@ -60,7 +62,6 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
     firstPageSlug: slug,
     location,
     processPageQuery,
-    containerRef: scrollContainer,
     pageWidth: NOTE_WIDTH,
   });
 
@@ -81,11 +82,11 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
       </header>
 
       <div
-        className="flex-1 flex flex-grow overflow-x-auto overflow-y-hidden"
+        className="flex-1 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden"
         ref={scrollContainer}
       >
         <div
-          className="note-columns-container flex flex-grow transition transition-width duration-100"
+          className="note-columns-container flex flex-grow transition-width duration-100"
           style={{ width: NOTE_WIDTH * (stackedPages.length + 1) }}
         >
           <ContextProvider value={{ stackedPages, navigateToStackedPage }}>

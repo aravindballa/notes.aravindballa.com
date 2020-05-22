@@ -1,18 +1,22 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import { LinkToStacked } from 'react-stacked-pages-hook';
 
 import components from 'gatsby-theme-andy/src/components/MdxComponents';
+import useWindowWidth from '../../utils/useWindowWidth';
 
 const NOTE_WIDTH = 576;
 
 const BrainNote = ({ note }) => {
+  const [width] = useWindowWidth();
   let references = [];
   let referenceBlock;
   if (note.inboundReferenceNotes != null) {
+    const RefLink = width < 768 ? Link : LinkToStacked;
     references = note.inboundReferenceNotes.map((reference) => (
-      <LinkToStacked
+      <RefLink
         className="no-underline hover:text-gray-700"
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
@@ -21,7 +25,7 @@ const BrainNote = ({ note }) => {
           <h5 className="">{reference.title}</h5>
           <p className="text-sm m-0">{reference.childMdx.excerpt}</p>
         </div>
-      </LinkToStacked>
+      </RefLink>
     ));
 
     if (references.length > 0) {
@@ -52,7 +56,9 @@ const BrainNote = ({ note }) => {
       });
   }
 
-  const AnchorTagWithPopups = (props) => <components.a {...props} popups={popups} />;
+  const AnchorTagWithPopups = (props) => (
+    <components.a {...props} popups={popups} noPopups={width < 768} />
+  );
 
   return (
     <MDXProvider components={{ a: AnchorTagWithPopups }}>
