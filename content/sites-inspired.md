@@ -14,3 +14,4 @@ A collection of websites that are inspired from this website in some or the othe
 - [Julian's public notes](https://notes.juliancanderson.com/)
 - [Akiff's notes](https://akiffpremjee.com/about)
 - [Brittik's website](https://brittikbasu.com)
+- [Dyeing The Blue Book](https://dyeing.thebluebook.co.za)
