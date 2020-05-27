@@ -17,7 +17,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
         <LinkToStacked {...restProps} to={href} />
       </Tippy>
     );
-  return noPopups ? (
+  return noPopups || restProps.children === href ? (
     <a {...restProps} href={href} />
   ) : (
     <Tippy
