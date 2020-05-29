@@ -15,3 +15,4 @@ A collection of websites that are inspired from this website in some or the othe
 - [Akiff's notes](https://akiffpremjee.com/about)
 - [Brittik's website](https://brittikbasu.com)
 - [Dyeing The Blue Book](https://dyeing.thebluebook.co.za)
+- [Andy Gao's notes](https://notebook.andyjgao.com)
