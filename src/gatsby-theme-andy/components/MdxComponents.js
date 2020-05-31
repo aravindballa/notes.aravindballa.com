@@ -35,7 +35,13 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   );
 };
 
-const NoteTag = ({ children, color }) => <span className={`bg-green-100`}>{children}</span>;
+const NoteTag = ({ children, color }) => (
+  <div
+    className={`bg-${color}-200 text-${color}-800 py-1 px-2 mb-2 mr-2 text-xs font-bold rounded inline-block`}
+  >
+    {children}
+  </div>
+);
 
 export default {
   a: AnchorTag,

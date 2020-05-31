@@ -1,6 +1,5 @@
 ---
 title: Podcasts
-tags: ['evergreen']
 ---
 
 I’ve been listening to podcasts since ages. I fell in love with them as soon I discovered this format. I listen to them on my commute, when I do boring (repetitive) work, when I need some noise, when I'm watering plants, when I workout/go for walk.

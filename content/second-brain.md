@@ -3,6 +3,8 @@ title: Second Brain
 tags: ['evergreen']
 ---
 
+<NoteTag color="green">Evergreen</NoteTag>
+
 ## The concept of second brains
 
 Your brain is for processing and not for storage. <span class="highlight">It's a CPU and not a HDD</span>. Only when you free your mind from the storage, you will have time to think. So we use second brains to store what we think and not care of remembering it.

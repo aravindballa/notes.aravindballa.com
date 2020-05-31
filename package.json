@@ -14,7 +14,9 @@
   "dependencies": {
     "@tippyjs/react": "^4.0.2",
     "gatsby": "^2.20.36",
+    "gatsby-plugin-mdx": "^1.2.13",
     "gatsby-plugin-postcss": "^2.2.4",
+    "gatsby-remark-embedder": "^2.1.1",
     "gatsby-theme-andy": "^0.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
