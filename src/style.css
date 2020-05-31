@@ -15,7 +15,7 @@ h3 {
   @apply font-bold;
 }
 a {
-  @apply text-blue-600 underline;
+  @apply underline;
 }
 a:hover {
   @apply text-blue-700 no-underline;

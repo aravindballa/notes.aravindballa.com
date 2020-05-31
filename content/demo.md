@@ -16,3 +16,5 @@ Lorem ipsum dolor sit amet consectetur **adipisicing** elit. Praesentium _dolore
 > A block quote in between text.
 
 Lorem ipsum dolor sit amet <span class="highlight">consectetur adipisicing</span> elit. Praesentium ^^dolore fugiat itaque^^ amet labore eos in laboriosam saepe dolorem, blanditiis iure architecto perspiciatis, nobis fuga pariatur, laudantium tempore eaque velit.
+
+I edit in obsidian and it works.

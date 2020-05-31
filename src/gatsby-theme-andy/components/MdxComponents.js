@@ -7,14 +7,16 @@ import { Link } from 'gatsby';
 
 // TODO cmd+click open page in new tab
 
+const innerLinkStyles = `text-blue-600 px-1 -mx-1 rounded hover:bg-blue-100 focus:bg-blue-100`;
+
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
   if (!href.match(/^http/))
     return noPopups ? (
-      <Link {...restProps} to={href} />
+      <Link {...restProps} to={href} className={innerLinkStyles} />
     ) : (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away">
-        <LinkToStacked {...restProps} to={href} />
+        <LinkToStacked {...restProps} to={href} className={innerLinkStyles} />
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
