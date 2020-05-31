@@ -1,8 +1,9 @@
 ---
-title: Note taking
+title: Roam Research
+aliases: ['Roam']
 ---
 
-The concept of [[Roam]] research is interesting. I am [[writing]] my thoughts down these days and trying to journal more frequently. Structuring them is difficult, because thoughts don't (generally) have a structure. 📓💭
+The concept of Roam research is interesting. I am [[writing]] my thoughts down these days and trying to journal more frequently. Structuring them is difficult, because thoughts don't (generally) have a structure. 📓💭
 
 The problem with apps like [[Notion]] is that it is hierarchical in nature. Page inside a Page and so on, which is good in a sense, to organise content. Same is with Evernote.
 
