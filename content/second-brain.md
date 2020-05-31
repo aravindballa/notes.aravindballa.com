@@ -1,5 +1,6 @@
 ---
 title: Second Brain
+tags: ['evergreen']
 ---
 
 ## The concept of second brains

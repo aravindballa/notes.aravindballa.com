@@ -1,5 +1,6 @@
 ---
 title: Podcasts
+tags: ['evergreen']
 ---
 
 I’ve been listening to podcasts since ages. I fell in love with them as soon I discovered this format. I listen to them on my commute, when I do boring (repetitive) work, when I need some noise, when I'm watering plants, when I workout/go for walk.
@@ -71,5 +72,7 @@ I have a huge list of podcasts that I listen to
 - DevDiscuss [rss](http://feeds.devpods.dev/devdiscuss_podcast.xml)
 - Full Stack Radio [rss](https://feeds.simplecast.com/Gd37VcDw)
 - Overlap: Start a Business While Working a Full Time Job
+
+_Last updated on 29th May 2020._
 
 And also, I host one - [[Learning Curve]] podcast.

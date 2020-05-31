@@ -10,12 +10,13 @@ import useWindowWidth from '../../utils/useWindowWidth';
 const NOTE_WIDTH = 576;
 
 const BrainNote = ({ note }) => {
+  console.log(note);
   const [width] = useWindowWidth();
   let references = [];
   let referenceBlock;
   if (note.inboundReferenceNotes != null) {
     const RefLink = width < 768 ? Link : LinkToStacked;
-    references = note.inboundReferenceNotes.map((reference) => (
+    references = note.inboundReferenceNotes.map(reference => (
       <RefLink
         className="no-underline hover:text-gray-700"
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
@@ -42,7 +43,7 @@ const BrainNote = ({ note }) => {
   const popups = {};
   if (note.outboundReferenceNotes) {
     note.outboundReferenceNotes
-      .filter((reference) => !!reference.childMdx.excerpt)
+      .filter(reference => !!reference.childMdx.excerpt)
       .forEach((ln, i) => {
         popups[ln.slug] = (
           <div
@@ -56,7 +57,7 @@ const BrainNote = ({ note }) => {
       });
   }
 
-  const AnchorTagWithPopups = (props) => (
+  const AnchorTagWithPopups = props => (
     <components.a {...props} popups={popups} noPopups={width < 768} />
   );
 
@@ -72,6 +73,7 @@ const BrainNote = ({ note }) => {
           If you think this note resonated, be it positive or negative, send me a{' '}
           <a href="https://twitter.com/messages/compose?recipient_id=532906019">direct message</a>{' '}
           on Twitter or an <a href="mailto:bsaaravind+notes@gmail.com">email</a> and we can talk.
+          Also ping if you'd like to know the updates on this note.
         </p>
       </div>
     </MDXProvider>

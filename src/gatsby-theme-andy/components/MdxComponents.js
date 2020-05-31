@@ -33,6 +33,9 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   );
 };
 
+const NoteTag = ({ children, color }) => <span className={`bg-green-100`}>{children}</span>;
+
 export default {
   a: AnchorTag,
+  NoteTag,
 };
