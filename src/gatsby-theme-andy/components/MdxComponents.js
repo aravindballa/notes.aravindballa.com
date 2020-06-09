@@ -30,7 +30,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
         <div className="py-1 px-2 bg-white rounded text-sm text-blue-600 shadow">{href}</div>
       }
     >
-      <a className="whitespace-no-wrap" {...restProps} href={href} />
+      <a className="" {...restProps} href={href} />
     </Tippy>
   );
 };

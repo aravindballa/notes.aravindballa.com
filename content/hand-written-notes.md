@@ -7,7 +7,7 @@ title: Handwritten Notes
 <div class="handwritten-notes-content">
 
 The problems with these handwritten notes is that
-these aren't searchable. And we cannot share parts ­of the note(ike copying text) easily. But it is quick
+these aren't searchable. And we cannot share parts ­of the note(like copying text) easily. But it is quick
 and (sometimes) beautiful.
 
 The [[technology]] is improving though. In apps like

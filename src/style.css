@@ -48,7 +48,8 @@ code {
 }
 
 pre {
-  @apply mb-4;
+  @apply mb-4 p-2 rounded bg-gray-100;
+  overflow-x: auto;
 }
 
 pre > code {

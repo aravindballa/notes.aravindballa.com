@@ -2,7 +2,7 @@
 title: Writing
 ---
 
-I inculcated a writing habit long and actually enjoy the process of it. This has resulted in start my [blog](https://aravindballa.com/writings) and it also provided me a lot of insights. Let me tell you what the goals are when I write.
+I inculcated a writing habit long and actually enjoy the process of it. This has resulted in starting my [blog](https://aravindballa.com/writings) and it also provided me a lot of insights. There are mainly 2 goals to my writing.
 
 ### To explain something
 
