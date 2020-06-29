@@ -28,6 +28,10 @@ ul {
   @apply list-disc pl-6;
 }
 
+ol {
+  @apply list-decimal pl-6;
+}
+
 hr {
   @apply my-4;
 }
